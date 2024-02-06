@@ -359,5 +359,11 @@ body.loaded h1#typed-text {
 
 .social_img .xyz {
     height: 70px;
+}
 
+.resume{
+    background-color: #832161;
+    color: #F0EFF4;
+    justify-content: center;
+    text-align: center;
 }
