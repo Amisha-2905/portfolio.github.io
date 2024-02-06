@@ -1,0 +1,27 @@
+body{
+    background-color: #028090;
+    color: #F0F3BD;
+    font-size: larger;
+    font-weight: 500;
+    flex: auto;
+}
+.image{
+    text-align:center
+}
+header{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.like_section{
+    text-align: center;
+}
+#likeButton{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding:0;
+    align-items: center;
+    background-color:rgb(206, 50, 76) ;
+}

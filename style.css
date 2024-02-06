@@ -1,0 +1,363 @@
+:root {
+    --font-color-light: #F0EFF4;
+    --font-color-dark: #ffffff;
+}
+
+
+.dark-mode {
+    background-color: #000000;
+    color: #F0EFF4;
+}
+
+body {
+    margin: 0px;
+    background-color: #F0EFF4;
+    min-height: 100vh;
+}
+
+.navigation_bar {
+    background-color: #DA4167;
+    color: #F0EFF4;
+    height: 70px;
+    line-height: 70px;
+    overflow: hidden;
+}
+
+.navigation_bar a {
+    text-decoration: none;
+    color: var(--font-color-light);
+    font-family: sans-serif;
+    font-weight: 550;
+    padding: 0 15px;
+    display: block;
+    text-align: center;
+}
+
+.navigation_bar a:hover {
+    background-color: #832161;
+    color: #F0EFF4;
+}
+
+.navigation_bar ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0%;
+    overflow: hidden;
+}
+
+.navigation_bar li {
+    float: left;
+}
+
+.sidebar{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100vh;
+    width:250px;
+    z-index:999;
+    background-color: #DA4167;
+    backdrop-filter:blur(50px);
+    box-shadow:-10px 0 10px;
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width:100%
+}
+
+.dark-mode .head_1 h1 {
+    color: #F0EFF4
+}
+
+.dark-mode .head_1 h1+h1 {
+    color: #DA4167
+}
+
+.head_1 h1,
+.head_1 h1+h1 {
+    display: inline-block;
+    margin-right: 10px;
+    color: #000000;
+    font-size: 40px;
+}
+
+.head_1 h1+h1 {
+    color: #3D2645;
+}
+
+.About {
+    display: flex;
+    align-items: center;
+}
+
+.About img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.About div{
+    flex-wrap: wrap;
+}
+
+#toggle_mode {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #DA4167;
+    color: #F0EFF4;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.03s ease-in-out;
+}
+
+#toggle_mode:hover {
+    background-color: #832161;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.dark-mode .timeline-date {
+    background-color: #3D2645;
+    color: #F0EFF4
+}
+
+.timeline-date {
+    min-width: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #DA4167;
+    color: #F0EFF4;
+    text-align: center;
+    font-weight: bold;
+}
+
+.timeline-content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.dark-mode .timeline-content h2 {
+    color: #DA4167;
+}
+
+.timeline-content h2 {
+    color: #3D2645;
+}
+
+.dark-mode .timeline-content p {
+    color: #F0EFF4;
+}
+
+.timeline-content p {
+    color: #000000;
+}
+
+h1#typed-text {
+    text-align: center;
+    font-size: xx-large;
+    opacity: 0;
+    overflow: hidden;
+    white-h1#typed-text {
+        text-align: center;
+        font-size: xx-large;
+        opacity: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid; /* Add a blinking cursor effect */
+        animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+    }
+    
+    body.loaded h1#typed-text {
+        opacity: 1;
+    }
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: #000; }
+    }
+    border-right: 2px solid; 
+    animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+body.loaded h1#typed-text {
+    opacity: 1;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #000; }
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: x-large;
+}
+
+.progress-bar {
+    height: 20px;
+    /* width: 700px; */
+    background-color: #DA4167;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #3D2645; /* Set the color for the progress */
+}
+
+.achievement{
+    display:flex;
+    justify-content: center;
+    align-items: centre;
+    margin:20px 0px;
+    flex-wrap:wrap ;
+}
+
+.achieve_box{
+    width:250 px;
+    background-color: #832161;
+    outline: #3D2645;
+    border-radius:5px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#F0EFF4
+}
+.achieve{
+    padding:20px;
+    font-weight: 600;
+}
+
+.description{
+    padding: 15px;
+    font-weight: 600;
+}
+
+.blog_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.blog_box{
+    width:350px;
+    background-color: #ffffff;
+    border:1px solid #ffffff;
+    margin:20px;
+}
+
+.blog_img{
+    width:100%;    
+}
+
+.blog_img img{
+    width:100%;
+    object-fit:cover;
+    object-position:centre;
+}
+
+.blog_text{
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog_text span{
+    color: #DA4167;
+    font-size:0.9rem;
+}
+
+.blog_text .blog_title{
+    font-size:1.3rem;
+    font-weight: 500;
+    color:#3D2645 ;
+}
+
+.blog_text .blog_title:hover{
+    color: #DA4167;
+    transition: all ease 0.3s;
+}   
+
+.blog_text p{
+    color:#000000;
+    font-size: 0.9rem;
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+
+.blog_text a{
+    color: #0f0f0f;
+}
+
+.blog_text a:hover{
+    color:#DA4167;
+    transition: all ease 0.3s;
+}
+
+@media screen and (max-width:800px) {
+    .hide{
+        display: none;
+    }
+    .About{
+        flex-direction: column;
+    }
+}
+
+.social_img{
+    justify-content: space-between;
+    background-color: #DA4167;
+    text-align: center;
+    padding: 0px;
+    margin: 0%;
+    width:100vw;
+}
+.social_img img{
+    height:70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.social_img .xyz {
+    height: 70px;
+
+}

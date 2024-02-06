@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>AMISHA</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation_bar">
+            <ul class="sidebar">
+                <li onclick=hide()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#blog">Blogs</a></li>
+                <li><a href="#social">Socials</a></li>
+            </ul>
+            <ul>
+                <li onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="hide"><a href="#about">About</a></li>
+                <li class="hide"><a href="#education">Education</a></li>
+                <li class="hide"><a href="#achievements">Achievements</a></li>
+                <li class="hide"><a href="#skills">Skills</a></li>
+                <li class="hide"><a href="#blog">Blogs</a></li>
+                <li class="hide"><a href="#social">Socials</a></li>
+            </ul>
+        </nav>
+        <button id="toggle_mode">Toggle Mode</button>
+    </header>
+    <main style="padding: 15px;">
+    <section id="about">
+
+        <div class="About">
+            <img src="Amisha_img.jpg" alt="Amisha">
+            <div>
+                <header class="head_1">
+                    <h1>About</h1>
+                    <h1>Me</h1>
+                </header>
+                <h1 id="typed-text"></h1>
+                <p style="font-size: 16px;"> a first-year student at the International Institute of Information Technology (IIIT) Hyderabad, pursuing a dual degree in Computer Science and Computational Linguistics. I believe in converting my dreams into reality.<br>
+                I'm passionate about exploring how technology and language interact and contribute to innovative solutions. I want to further delve into the fascinating world of Machine Learning, Natural Language Processing, and Artificial Intelligence, eager to understand how computers can interpret and even generate human language. My ultimate goal is to leverage this knowledge to create impactful applications that address real-world challenges.<br>
+                Beyond academics, I enjoy watching new movies. I'm always open to connecting with like-minded individuals who share same interests. Feel free to reach out and say hi!</p>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <header class="head_1">
+            <h1>My</h1>
+            <h1>Education</h1>
+        </header>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2008-2009</div>
+                <div class="timeline-content">
+                    <h2>Play School</h2>
+                    <p>Singhal Stars School,Mansa</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2009-2021</div>
+                <div class="timeline-content">
+                    <h2>High School</h2>
+                    <p>St.Xavier's School, Mansa</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2021-2023</div>
+                <div class="timeline-content">
+                    <h2>Secondary School</h2>
+                    <p>Alpine School,Mansa</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2023-<br>Present day</div>
+                <div class="timeline-content">
+                    <h2>B.Tech in Computer Science and MS in Computational Linguistics</h2>
+                    <p>IIIT Hyderabad</p>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <section id="achievements">
+        <header class="head_1">
+            <h1>My</h1>
+            <h1>Achievements</h1>
+        </header>
+        <div class="achievement">
+            <div class="achieve_box">
+                <div class="achieve">
+                    10th Boards
+                </div>
+                <div class="description">
+                    97.4%
+                </div>
+            </div>
+            <div class="achieve_box">
+                <div class="achieve">
+                    12th Boards
+                </div>
+                <div class="description">
+                    89.6%
+                </div>
+            </div>
+            <div class="achieve_box">
+                <div class="achieve">
+                    JEE Mains rank
+                </div>
+                <div class="description">
+                    37313
+                </div>
+            </div>
+            <div class="achieve_box">
+                <div class="achieve">
+                    JEE Advanced rank
+                </div>
+                <div class="description">
+                    13500
+                </div>
+            </div>
+            <div class="achieve_box">
+                <div class="achieve">
+                    UGEE rank
+                </div>
+                <div class="description">
+                    16
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <header class="head_1">
+            <h1>My</h1>
+            <h1>Skills</h1>
+        </header>
+        <div class="skill">
+            <span class="skill-name">C/C++</span>
+        <div class="progress-bar">
+            <div class="progress" style="width: 50%;"></div>
+        </div>
+        <span class="skill-name">HTML</span>
+        <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+        </div>
+        <span class="skill-name">CSS</span>
+        <div class="progress-bar">
+            <div class="progress" style="width: 30%;"></div>
+        </div>
+        <span class="skill-name">Javascript</span>
+        <div class="progress-bar">
+            <div class="progress" style="width: 20%;"></div>
+        </div>
+        <span class="skill-name">Python</span>
+        <div class="progress-bar">
+            <div class="progress" style="width: 40%;"></div>
+        </div>
+        </div>
+    </section> 
+    <section id="blog">
+        <header class="head_1">
+            <h1>My</h1>
+            <h1>Blogs</h1>
+        </header>
+        <div class="blog_container">
+            <div class="blog_box">
+                <div class="blog_img">
+                    <img src="generative_ai.jpeg" alt="Generative AI">
+                </div>
+                <div class="blog_text">
+                    <span>February 05,2023/Generative AI</span>
+                    <a href="blog1.html" target="_blank" class="blog_title">The Dawn of Creativity: How Generative AI is Shaping Our Future</a>
+                    <p>Generative AI is a catalyst for a new age of innovation and creativity.</p>
+                    <a href="blog1.html" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="blog_box">
+                <div class="blog_img">
+                    <img src="goal.jpeg" alt="Goal Pursuit">
+                </div>
+                <div class="blog_text">
+                    <span>February 05,2023/Goal Pursuit</span>
+                    <a href="blog2.html" target="_blank" class="blog_title">The Pursuit of Purpose: How Self-Set Goals Propel Us Forward</a>
+                    <p>People are not driven by past causes but move towards goals they themselves set.</p>
+                    <a href="blog2.html" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    <section id="social">
+        <header class="head_1" style="padding:20px;">
+            <h1>My</h1>
+            <h1>Socials</h1>
+            <a href="Document 2.pdf" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>
+            </a>
+        </header>
+        <div class="social_img">
+            <a href="https://www.instagram.com/amisha.0918/">
+                <img src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-logo-abundant-instagram-logo-simple-icon-1.png" alt="Instagram logo">
+            </a>
+            <a href="https://github.com/Amisha-2905">
+                <img src="https://www.freepnglogos.com/uploads/512x512-logo/512x512-transparent-logo-github-logo-24.png" alt="Github logo">
+            </a>
+            <a href="mailto:amisha.amisha@research.iiit.ac.in">
+                <img src="https://www.freepnglogos.com/uploads/e-mail--logo-png-2.png" alt="E-mail logo">
+            </a>
+        </div>
+    </section> 
+
+    <script src="script.js"></script>
+</body>
+</html>
